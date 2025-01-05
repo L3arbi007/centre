@@ -1,0 +1,164 @@
+/* Conteneur principal de la page de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centrer le contenu verticalement */
+  min-height: 100vh; /* S'assure que le conteneur occupe toute la hauteur de la fenêtre */
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: url('/assets/reception.jpg') no-repeat center center; /* Image d'arrière-plan */
+  background-size: cover; /* Assure que l'image couvre toute la page */
+  background-attachment: fixed; /* Image fixe pendant le défilement */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  background: linear-gradient(90deg, rgba(0, 154, 206, 0.5), rgba(44, 62, 80, 0.5));
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.header .logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #f39c12;
+}
+
+/* Titre principal */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Conteneur des boutons de login */
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Style des boutons */
+.login-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(55, 102, 149, 0.8);
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol du bouton */
+.login-btn:hover {
+  background-color: #005f7f;
+  transform: scale(1.05);
+}
+
+/* Effet au focus du bouton */
+.login-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 168, 255, 0.5);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, rgba(0, 154, 206, 0.5), rgba(44, 62, 80, 0.5));
+  padding: 20px 20px;
+  color: white;
+  text-align: center;
+  width: 100%; /* S'assure que le footer prend toute la largeur */
+  position:fixed; /* Utilise un positionnement absolu pour le fixer au bas de la page */
+  bottom: 0; /* Fixe le footer au bas */
+}
+
+/* Footer contenu */
+.footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer .footer-links {
+  margin-top: 10px;
+}
+
+.footer .footer-links a {
+  margin: 0 15px;
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer .footer-links a:hover {
+  color: #00a8ff;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,144 @@
+/* Styles pour la page Gestion des Patients */
+.gestion-patients-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-position: center;
+    background: url('/assets/doctor-dashboard.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(0, 154, 206, 0.8), rgba(44, 62, 80, 0.8));
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+  }
+  
+  .header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin-right: 30px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Contenu de la gestion des patients */
+  .gestion-patients-content {
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #33a1c6;
+  }
+  
+  th {
+    background-color: #60afca;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(90deg, rgba(0, 154, 206, 0.8), rgba(44, 62, 80, 0.8));
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+  
+  footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  footer .footer-links {
+    margin-top: 10px;
+  }
+  
+  footer .footer-links a {
+    margin: 0 15px;
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  footer .footer-links a:hover {
+    color: #00a8ff;
+  }
+  
+  /* Responsivité pour les petits écrans */
+  @media (max-width: 768px) {
+    .gestion-patients-container {
+      padding: 15px;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

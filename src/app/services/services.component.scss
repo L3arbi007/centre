@@ -1,0 +1,169 @@
+/* Variables */
+$primary-color: #009ace;
+$secondary-color: #2c3e50;
+$text-color: #333;
+$light-gray: #f9f9f9;
+$white: #fff;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $light-gray;
+  color: $text-color;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, rgba(0, 154, 206, 0.8), rgba(44, 62, 80, 0.8));
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.header .logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #f39c12;
+}
+
+
+/* Services Container */
+.services-container {
+  padding: 80px 20px;
+  margin-top: 70px; // To account for the fixed header
+  background-color: $light-gray;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: $text-color;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+
+    .service {
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .service-icon {
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-bottom: 2px solid $light-gray;
+        }
+      }
+
+      .service-details {
+        padding: 20px;
+        text-align: left;
+
+        h2 {
+          font-size: 1.8rem;
+          color: $text-color;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: darken($text-color, 20%);
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: $secondary-color;
+  padding: 40px 20px;
+  color: $white;
+  text-align: center;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+
+    a {
+      margin: 0 15px;
+      color: lighten($white, 20%);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+

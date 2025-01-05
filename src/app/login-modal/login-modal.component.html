@@ -1,0 +1,36 @@
+<div class="login-container">
+    <header class="header">
+      <div class="logo">
+        <img src="/assets/logo.jpg" alt="Logo du Centre Médical" class="logo-img">
+        <h1>Centre Médical - Login</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="home">Accueil</a></li>
+          <li><a href="services">Nos services</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <div class="login-container">
+      <h2>Choisissez votre rôle pour vous connecter</h2>
+      <div class="login-buttons">
+        <button (click)="navigateToLogin('patient')" class="login-btn">Connexion Patient</button>
+        <button (click)="navigateToLogin('medecin')" class="login-btn">Connexion Médecin</button>
+        <button (click)="navigateToLogin('staff')" class="login-btn">Connexion Staff Médical</button>
+      </div>
+    </div>
+  
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Centre Médical - Tous droits réservés</p>
+        <div class="footer-links">
+          <a href="#">Mentions Légales</a>
+          <a href="#">Politique de Confidentialité</a>
+          <a href="#">Conditions Générales</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  

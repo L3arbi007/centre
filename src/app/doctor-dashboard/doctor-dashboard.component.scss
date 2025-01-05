@@ -1,0 +1,136 @@
+.doctor-dashboard {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Assure que la page couvre toute la hauteur de la fenêtre */
+
+  /* Background image */
+  background: url('/assets/doctor-dashboard.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff; /* Texte blanc pour contraster avec l'image de fond */
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(0, 154, 206, 0.5), rgba(44, 62, 80, 0.5));
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+  }
+  .header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    margin-right: 30px;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+
+  .navbar ul li a:hover {
+    color: #f39c12;
+  }
+
+  .doctor-dashboard-content {
+    flex: 1; /* Prend tout l'espace disponible entre le header et le footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto; /* Center content both horizontally and vertically */
+    color: #333; /* Dark text color for readability */
+  }
+
+  .doctor-dashboard-content h2 {
+    margin-bottom: 20px;
+    font-size:2rem;
+    font-weight: bold;
+  }
+  .doctor-dashboard-content p {
+    margin-bottom: 20px;
+    font-size:1rem;
+    font-weight: bold;
+  }
+
+  .doctor-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .doctor-actions .dashboard-btn {
+    background-color: #426d97;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+  }
+
+  .doctor-actions .dashboard-btn:hover {
+    background-color: #33a1c6;
+  }
+
+  .footer {
+    background: linear-gradient(90deg, rgba(0, 154, 206, 0.6), rgba(44, 62, 80, 0.6));
+    padding: 20px 20px;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-links a {
+    margin: 0 15px;
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .footer-links a:hover {
+    color: #00a8ff;
+  }
+}
